@@ -38,6 +38,9 @@ DEPEND="
 "
 
 BUILD_DIR="${S}/build"
+PATCHES=(
+	"${FILESDIR}/${P}-correct_bin_src.patch"
+)
 
 src_prepare() {
 	default
